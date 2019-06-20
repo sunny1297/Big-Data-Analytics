@@ -8,7 +8,9 @@ Problem statement
 
 We will predict which Best Buy product a mobile web visitor will be most interested in based on their
 search query or behavior over 2 years.
-Questions of interest: Optimizing the mobile app recommendation system in order to increase
+
+Questions of interest:
+Optimizing the mobile app recommendation system in order to increase
 incremental sales and potentially streamline supply chain by reducing product offerings based on user
 feedback. Can we use past consumer browsing behavior in order to predict future purchases.
 Why? Our team’s focus is to gain real world experience on problems companies are having today.
@@ -17,8 +19,11 @@ able to solve this question in a way that is actionable not only helps build exp
 of value to potential employers. By using web data we will be able to find repeated patterns in a users
 behavior which will then allow us the ability to identify the next product in their purchase history. An
 analysis on web data is also to our team an universal learning we can apply to many other projects.
-Motivation: We hope to predict which Best Buy product a mobile web visitor will be most interested in.
+
+Motivation:
+We hope to predict which Best Buy product a mobile web visitor will be most interested in.
 Resources used for the project and the dataset ( link to dataset included)
+
 The main data for this project is in the train.csv and test.csv files. These files contain information on what
 items users clicked on after making a search.
 Link: https://www.kaggle.com/c/acm-sf-chapter-hackathon-big/data
@@ -30,15 +35,14 @@ https://blog.cloudera.com/blog/2016/05/how-to-build-a-prediction-engine-using-sp
 ala/
 Other preliminary information:
 The analysis was a result of a hackathon in SF in 2014.
-The list of tasks each member performed:
-Task Team Lead
+
 Data exploration and visualization
 ● Find open source data set and download
 ● Explore the data set in terms of its features, attributes (columns),
 records (rows), and size, include your findings in your report.
 ● Visualize the data for a better insight and make it a part of your project
 report.
-Yajaira Gonzalez
+
 Data Cleanings
 ● Missing values,
 ● Duplications,
@@ -49,35 +53,19 @@ Analysis
 ● Refer to the problem statement and apply your analysis methods
 ● Write your queries and illustrate the results, use visualization methods,
 and include the analysis explanation into your report.
-Lead: Mandeep
-Narang
-Support:
-● Nirlep
-● Soren
-Thomsen
-● Yajaira
-Gonzalez
-● Sunny Yadav
+
 Conclusion and future work
 ● make conclusions based on the analysis (part of the report)
 ● mention potential future work in your report.
-Lead: Nirlep
-Support: Soren
-Thomsen
+
 Report implementation environment
 ● Computing environment, hardware and software, operating system
 ● Software tools used in the analysis
 ● If used, Python version and libraries
 ● If used, include Python code as an appendix
-Lead: Sunny Yadav
-Support:
-● Yajaira
-Gonzalez
-● Nirlep
-● Soren
-Thomsen
-● Sunny Yadav
+
 Data Exploration & Visualization
+
 Data set descriptors
 Each line of train.csv describes a user's click on a single item and is ( 1865269 rows , 6 columns). It
 contains the following fields:
@@ -97,20 +85,26 @@ query_time. In addition, there is information about products, product categories
 product_data.tar.gz.
 Data Cleaning Process:
 A large part of our initial analysis was focused on getting the data converted from .xml files to csv files.
+
 Once this was completed we removed a portion of the data that we did not need for analysis.
+
 Visualizations:
 Understand Rating dataset for user-user similarity model (elaborate more on our EDA and why we looked
 at certain things)
+
 This title shows the frequency of product reviews and clearly
 shows that most products on the mobile app only have one or
 two reviews which limited the scope of our analysis
 Most product reviews show mainly 5 star ratings
+
 Here the density of Ratings is shown. Where we can
 see how density of users who have given a rating 1 for
 a product differs from density of users who have given
 a rating of 2, 3, 4 and 5
+
 Here we see the frequency of votes for each ratings i.e 1, 2, 3, 4, 5
 We see that most users have rated a product only once.
+
 Title length exploration
 Here we can see that there is no direct
 obvious relation between the Title
@@ -163,7 +157,7 @@ For our analysis and application of PC in our python code we first selected 2 us
 PC function to find correlations of user 1 & 2 based on existing ratings that matched those users behavior
 in the developed matrix. The table below shows what users are closely related to user 1. Please reference
 code for item correlation table.
-.
+
 This information from the PC table of correlations then helped take our analysis a step further by being
 able to cross reference the full ‘merged’ data frame and understand what products have been already
 viewed, viewed by others similar to the user that are unique and provide a list of recommended items. The
@@ -257,7 +251,7 @@ Modeling/Machine Learning
 ● Surprise
 ● Thinkstat
 ● Thinkplot
-Data Visualization
+● Data Visualization
 ● Plotly
 ● Interactive
 ● Matplotlib
